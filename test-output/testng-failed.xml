@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.supermarket.extentreport.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="Testing(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.supermarket.tests.ManageExpenseTestcase">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="afterClass"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="afterSuite"/>
+          <include name="beforeClass"/>
+          <include name="validateDeleteExpense"/>
+          <include name="afterTest"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.supermarket.tests.ManageExpenseTestcase -->
+    </classes>
+  </test> <!-- Testing(failed) -->
+</suite> <!-- Failed suite [Suite] -->
